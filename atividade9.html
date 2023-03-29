@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altura de 5 pessoas</title>
+</head>
+<body>
+    <script>
+
+       let alturaTotal = 0;
+       const numeroDePessoas = 5;
+
+       for (let i = 1; i <= numeroDePessoas; i++) {
+          const altura = parseFloat(prompt(`Digite a altura da pessoa ${i}:`));
+          alturaTotal += altura;
+        }
+
+       const media = alturaTotal / numeroDePessoas;
+       window.alert(`A altura média das ${numeroDePessoas} pessoas é ${media} metros.`);
+
+    </script>
+</body>
+</html>

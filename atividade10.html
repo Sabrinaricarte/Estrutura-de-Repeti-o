@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprimir números primos</title>
+</head>
+<body>
+    <script>
+
+        // Lê o número inteiro positivo
+        let numero = parseInt(prompt("Digite um número inteiro positivo:"));
+
+       // Verifica se o número é positivo e maior que 1
+       if (numero > 1) {
+      // Percorre todos os números de 2 até o número informado
+      for (let i = 2; i <= numero; i++) {
+      let ehPrimo = true;
+      // Verifica se o número atual é primo
+      for (let j = 2; j < i; j++) {
+         if (i % j === 0) {
+           ehPrimo = false;
+           break;
+        }
+       }
+      // Imprime o número se ele for primo
+         if (ehPrimo) {
+      window.alert(i);
+      }
+    }
+     } else {
+     window.alert("O número deve ser inteiro, positivo e maior que 1.");
+   }
+
+    </script>
+</body>
+</html>

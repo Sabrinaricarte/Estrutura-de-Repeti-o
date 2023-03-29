@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome e Idade de 5 pessoas</title>
+</head>
+<body>
+    <script>
+
+        // Inicializa as variáveis para armazenar o nome e a idade da pessoa mais velha
+        let nomeMaisVelho = '';
+        let idadeMaisVelho = 0;
+
+        // Loop para ler os dados de entrada do usuário
+       for (let i = 1; i <= 5; i++) {
+       // Lê o nome da pessoa
+          let nome = prompt('Digite o nome da pessoa ' + i + ':');
+
+        // Lê a idade da pessoa
+          let idade = Number(window.prompt('Digite a idade da pessoa ' + i + ':'));
+  
+        // Verifica se essa pessoa é a mais velha até agora
+          if (idade > idadeMaisVelho) {
+             nomeMaisVelho = nome;
+             idadeMaisVelho = idade;
+            }
+         }
+
+        // Imprime o nome da pessoa mais velha 
+        window.alert('A pessoa mais velha é ' + nomeMaisVelho);
+          
+
+    </script>
+</body>
+</html>

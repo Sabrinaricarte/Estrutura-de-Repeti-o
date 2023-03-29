@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Idade de 5 pessoas</title>
+</head>
+<body>
+	<script>
+		let idade, soma = 0, contador = 0;
+        do {
+            idade = prompt(`Digite a idade da pessoa ${contador + 1}:`);
+            soma += Number(idade);
+            contador++;
+        } while (contador < 5);
+
+            const media = soma / 5;
+
+            console.log(`A média das idades é: ${media}`);
+
+	</script>
+</body>
+</html>
